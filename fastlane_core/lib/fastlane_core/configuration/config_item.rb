@@ -3,7 +3,7 @@ module FastlaneCore
     attr_accessor :key, :env_name, :description, :short_option, :default_value, :verify_block, :optional, :conflicting_options, :conflict_block, :deprecated
 
     # Creates a new option
-    # @param key (Symbol) the key which is used as command paramters or key in the fastlane tools
+    # @param key (Symbol) the key which is used as command parameters or key in the fastlane tools
     # @param env_name (String) the name of the environment variable, which is only used if no other values were found
     # @param description (String) A description shown to the user
     # @param short_option (String) A string of length 1 which is used for the command parameters (e.g. -f)

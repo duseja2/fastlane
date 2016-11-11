@@ -48,7 +48,7 @@ module Fastlane
           upload_dsym(resource, dsym)
         end
 
-        # Return uplaoded dSYM paths
+        # Return uploaded dSYM paths
         uploaded_paths
       end
 
@@ -102,7 +102,7 @@ module Fastlane
                                        end),
           FastlaneCore::ConfigItem.new(key: :project_slug,
                                        env_name: "SENTRY_PROJECT_SLUG",
-                                       description: "Prgoject slug for Sentry",
+                                       description: "Project slug for Sentry",
                                        verify_block: proc do |value|
                                          UI.user_error!("No project slug for SentryAction given, pass using `project_slug: 'project'`") unless value and !value.empty?
                                        end),
